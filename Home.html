@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Buttons and Photo Slideshow</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .carousel-item img {
+            height: 400px; /* Adjust the height as needed */
+            object-fit: cover; /* Ensure the image covers the entire area */
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <!-- Navigation bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <!-- Home button aligned to the left -->
+        <a class="btn btn-dark me-2" href="http://localhost/OMS/OMS.html">
+            <i class="fas fa-home"></i>
+        </a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost/OMS/Trust/Trust.php">Trust</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost/OMS/Donation/donation.php">Donation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost/OMS/House-Parent/houseparent.php">Houseparent</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost/OMS/Adoptor/adoptor.php">Adoptor</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost/OMS/Room/room.php">Room</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <!-- Photo slideshow -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://t4.ftcdn.net/jpg/01/95/94/75/240_F_195947506_f7Gt71TOQvwHbQq6gprW6QSJLlxY00oV.jpg" class="d-block w-110" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://img.freepik.com/free-vector/child-adoption-set-family-adopting-boy-from-orphanage-welcoming-him-home-flat-isolated-vector-illustration_1284-82939.jpg?t=st=1715411167~exp=1715414767~hmac=2781400165801160ff818fa9a8047ca6fa480d938955437fb6384f957852d506&w=1060" class="d-block w-100" alt="Slide 2">
+            </div>
+        </div>
+    </div>
+
+    <!-- Button to add new child -->
+    <div class="container mt-3">
+        <div class="text-center">
+            <a href="http://localhost/OMS/Orphan/add-new.php" class="btn btn-primary">
+                <i class="fas fa-user-plus me-1"></i>Add New Child
+            </a>
+        </div>
+    </div>
+
+    <!-- Section for orphanage child's story -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <h2>Why should you care?</h2>
+                <p>All children, particularly orphans, need a safe place to grow. Caring for orphans and nurturing them with the basics like food and clean clothes, and access to education, increases the likelihood of them becoming positive members of their communities. Changing their narrative from being vulnerable to resilient.
+                    Most of the time, children are left in orphanages because their widowed mother cannot afford to take care of them and their fathers are gone through disease or conflict. These widows put their trust in the orphanage to feed, clothe and educate their children and provide them with a stronger start in life. However, many countries outside the UK neglect the orphanages and the children they take in, resulting in homes that are either too crowded or without enough supplies for the orphans meaning many children still go without.</p>
+                <a href="https://oinusa.org/appeals/global-orphan-care/?gad_source=1">
+                    <p>Source</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+     <!-- Font Awesome -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-BJmk6tq83nX+yqEe8A/YE8blslYRXg/wQf3b1aDTfWlH9ykgW+alCwSZHZaaGtVMvCJzWMez24LkqzddE9jDcw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  
+    <!-- Custom JS for exit and add new child function -->
+    <script>
+       
+
+        function addNewChild() {
+            // Add your logic to handle adding a new child here
+            alert("Adding a new child...");
+        }
+    </script>
+</body>
+</html>
